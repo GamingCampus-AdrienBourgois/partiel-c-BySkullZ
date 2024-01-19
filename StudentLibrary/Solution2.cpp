@@ -11,7 +11,7 @@
 
 float Solution2::GetBalance(const std::string& accountName)
 {
-	std::ifstream account(accountName);
+	std::ifstream account("x64\\Release\\" + accountName);
 
     float balance = 0.f;
 
