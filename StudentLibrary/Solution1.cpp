@@ -20,10 +20,10 @@ float Solution1::ConvertTemperature(float _value, TemperatureUnits _from, Temper
 		return 5.f / 9.f * (_value - 32.f);
 	}
 	else if (_from == TemperatureUnits::CELSIUS && _to == TemperatureUnits::KELVIN) {
-		return _value + 273.f;
+		return _value + 273.15f;
 	}
 	else if (_from == TemperatureUnits::KELVIN && _to == TemperatureUnits::CELSIUS) {
-		return _value - 273.f;
+		return _value - 273.15f;
 	}
 	else if (_from == TemperatureUnits::FAHRENHEIT && _to == TemperatureUnits::KELVIN) {
 		return 5.f / 9.f * (_value - 32.f) + 273.f;
