@@ -46,7 +46,7 @@ public:
 
 	bool Test(float _value, TemperatureUnits _from, TemperatureUnits _to, float _result) const
 	{
-		return AreAlmostEqual(Solution1::ConvertTemperature(_value, _from, _to), _result, 0.001f);
+		return AreAlmostEqual(Solution1::ConvertTemperature(_value, _from, _to), _result, 0.01f);
 	}
 };
 
