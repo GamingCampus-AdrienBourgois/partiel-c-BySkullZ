@@ -7,6 +7,9 @@
 
 float Solution1::ConvertTemperature(float _value, TemperatureUnits _from, TemperatureUnits _to)
 {
+	if (_from == _to) {
+		return _value;
+	}
 	if (_from == TemperatureUnits::CELSIUS && _to == TemperatureUnits::FAHRENHEIT) {
 		return 9.f / 5.f * _value + 32.f;
 	}
