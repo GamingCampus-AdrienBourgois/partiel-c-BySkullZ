@@ -11,7 +11,7 @@
 
 float Solution2::GetBalance(const std::string& accountName)
 {
-	std::ifstream account(accountName + ".txt");
+	std::ifstream account("BankAccount/" + accountName + ".txt");
 
     float balance = 0.f;
 
