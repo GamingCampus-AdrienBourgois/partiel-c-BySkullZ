@@ -28,8 +28,6 @@ float Solution1::ConvertTemperature(float _value, TemperatureUnits _from, Temper
 	else if (_from == TemperatureUnits::FAHRENHEIT && _to == TemperatureUnits::KELVIN) {
 		return 5.f / 9.f * (_value - 32.f) + 273.f;
 	}
-
-	return -1.0f;
 }
 
 #endif

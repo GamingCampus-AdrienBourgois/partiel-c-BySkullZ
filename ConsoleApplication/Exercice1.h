@@ -41,6 +41,10 @@ public:
 
 	bool AreAlmostEqual(float a, float b, float epsilon = 0.0001f) const
 	{
+		std::cout << "Valeur initiale: " << a << std::endl;
+		std::cout << "Valeur attendue: " << b << std::endl;
+		std::cout << "Valeur arrondie: " << std::fabs(a - b) << std::endl;
+
 		return std::fabs(a - b) < epsilon;
 	}
 
