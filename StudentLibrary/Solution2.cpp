@@ -16,6 +16,8 @@ float Solution2::GetBalance(const std::string& accountName)
     float balance = 0.f;
 
     if (account.is_open()) {
+        std::cout << "OUVERT !";
+
         std::string ligne;
         while (std::getline(account, ligne)) {
             std::istringstream ss(ligne);
@@ -39,8 +41,10 @@ float Solution2::GetBalance(const std::string& accountName)
 
         return balance;
     }
-    
-    throw std::exception("Compte non valide.");
+    else {
+        std::cout << "FICHIER PAS OUVERT !";
+        throw std::exception("Compte non valide.");
+    }
 
 	return -1.0f;
 }
